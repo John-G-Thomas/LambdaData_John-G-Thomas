@@ -1,10 +1,9 @@
 """
-Function to add date columns from datetime column
+Function get date into int
 """
 
 
 def get_date_int(df, date_column):
-    year = df[date_column].dt.year
-    month = df[date_column].dt.month
-    week = df[date_column].dt.week
+    df["year"] = df[date_column].dt.year
+    df["month"] = df[date_column].dt.month
     return year, month, week
