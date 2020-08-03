@@ -14,7 +14,7 @@ setuptools.setup(
     url="https://github.com/John-G-Thomas/chaindata",
     packages=setuptools.find_packages(),
     python_requires='>=3.7',
-                     classifiers = [
+    classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",]
