@@ -1,10 +1,10 @@
 """
 Function to add date columns from datetime column
 """
-class chaindata_date
-        def chaindata_date(df):
-                self['Year'] = df['date_column'].dt.to_period('Y')
-                self['Month'] = df['date_column'].dt.to_period('M')
-                self['Day'] = df['date_column'].dt.to_period('D')
-                return df
 
+
+def chaindata_date(df: Object) -> Object:
+    df['Year'] = df['date_column'].dt.to_period('Y')
+    df['Month'] = df['date_column'].dt.to_period('M')
+    df['Day'] = df['date_column'].dt.to_period('D')
+    return df
