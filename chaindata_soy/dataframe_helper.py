@@ -5,7 +5,7 @@ import pandas as pd
 import datetime as dt
 
 
-def chaindata_dates(df: dt):
+def chaindata_date(df: dt):
     """
     :rtype: object
     :type df: datetime as dt
@@ -14,4 +14,5 @@ def chaindata_dates(df: dt):
     df['Year'] = df['date_column'].dt.to_period('Y')
     df['Month'] = df['date_column'].dt.to_period('M')
     df['Day'] = df['date_column'].dt.to_period('D')
-    return df
+    assert isinstance(df, __class_or_tuple=dt.datetime)
+    return
