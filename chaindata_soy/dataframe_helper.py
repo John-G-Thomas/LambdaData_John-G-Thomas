@@ -5,8 +5,9 @@ import pandas as pd
 import datetime as dt
 
 
-def chaindata_dates(df: dt) -> dt:
+def chaindata_dates(df: dt):
     """
+    :rtype: object
     :type df: datetime as dt
     """
     df['date_column'] = pd.to_datetime(df['date_column'])
