@@ -1,3 +1,4 @@
 from chaindata import chaindata_soy
-print("hello")
+from chaindata_soy import chaindata_date
+
 
