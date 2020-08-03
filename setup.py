@@ -9,7 +9,7 @@ setuptools.setup(
     author="John Thomas",
     author_email="johnthomasg0215@example.com",
     description="A small example package",
-    long_description=long_description readme(),
+    long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/John-G-Thomas/chaindata",
     packages=setuptools.find_packages(),
