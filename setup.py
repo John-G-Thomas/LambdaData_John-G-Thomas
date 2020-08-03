@@ -13,12 +13,13 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/John-G-Thomas/chaindata",
     packages=setuptools.find_packages(),
-    classifiers=[
-        "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
-    ],
-    python_requires='>=3.7',)
+    python_requires='>=3.7',
+    install_requires=REQUIRED,
+                     classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",]
+)
 
 
 
