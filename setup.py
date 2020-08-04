@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="johnthomasg0215", # Replace with your own username
+    name="johnthomasg0215",  # Replace with your own username
     version="0.0.2",
     author="John Thomas",
     author_email="johnthomasg0215@example.com",
@@ -14,12 +14,8 @@ setuptools.setup(
     url="https://github.com/John-G-Thomas/chaindata",
     packages=setuptools.find_packages(),
     python_requires='>=3.7',
-    classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",]
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        'Operating System :: OS Independent', ]
 )
-
-
-
-
