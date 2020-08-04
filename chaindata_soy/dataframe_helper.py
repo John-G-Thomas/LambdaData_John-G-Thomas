@@ -2,6 +2,7 @@
 Function cleans dataframe
 """
 import pandas as pd
+from comtypes.npsupport import datetime64
 
 
 def clean(df):
@@ -9,7 +10,7 @@ def clean(df):
     # Drop NaN and extra columns and index
     df.dropna(subset=[df.select_dtypes(include=['datetime64'])], inplace=True)
     df.set_index(pd.to_datetime(df.select_dtypes(include=['datetime64'])), inplace=True)
-    assert isinstance(df, object)
+    assert isinstance(df, datetime64)
     return df
 
 
