@@ -1,4 +1,5 @@
 import pandas as pd
+import math
 
 
 class MyDataFrame(pd.DataFrame):
@@ -62,9 +63,6 @@ class Tiger(Animal):
     # Example of overriding
     def run(self):
         return 'Scamperwoosh!'
-
-
-import math
 
 
 def example1():
