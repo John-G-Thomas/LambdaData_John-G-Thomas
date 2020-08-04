@@ -13,7 +13,7 @@ def cleaned(df):
 
 
 """
-clean datas and add pecific columns# def cleandate(df):
+clean data's and add specific columns# def cleandate(df):
 """
 
 
