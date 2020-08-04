@@ -3,26 +3,18 @@ Function cleans dataframe
 """
 import pandas as pd
 
-
-def clean(df):
-    df = df.copy()
-    # Drop NaN and extra columns and index
-    df.dropna(subset=[df.select_dtypes(include=['datetime64'])], inplace=True)
-    df.set_index(pd.to_datetime(df.select_dtypes(include=['datetime64'])), inplace=True)
-    return df
-
-
 """
 clean data's and add specific columns# def cleandate(df):
 """
 
 
 def cleandates(df):
-    df = df.copy()
     df['Year'] = (df.select_dtypes(include=['datetime64']).to_period('Y'))
     df['Month'] = (df.select_dtypes(include=['datetime64']).to_period('M'))
     df['Day'] = (df.select_dtypes(include=['datetime64']).to_period('D'))
-    return df
+    df.set_index(pd.to_datetime(df.select_dtypes(include=['datetime64'])), inplace=True)
+    df_cl = df.drop(df.select_dtypes(include=['datetime64']))
+    return df_cl
 
 
 def assess_NA(data):
