@@ -46,8 +46,13 @@ class Animal:
     def run(self):
         return 'Vroom!'
 
-    def eat(self, food):
-        return food + ' is delicious, yum!'
+
+def eat(food):
+    return food + ' is delicious, yum!'
+
+
+def say_great():
+    return "It's GREEAAAAT!"
 
 
 class Tiger(Animal):
@@ -56,9 +61,6 @@ class Tiger(Animal):
     def __nit__(self, name, weight, diet_type, num_stripes):
         super().__init__(name, weight, diet_type)
         self.num_stripes = num_stripes
-
-    def say_great(self):
-        return "It's GREEAAAAT!"
 
     # Example of overriding
     def run(self):
