@@ -6,4 +6,4 @@ import pandas as pd
 
 from .dataframe_helper import clean, date
 
-TEST = pd.DataFrame(np.one(10))
+TEST = pd.DataFrame(np.ones(10))
