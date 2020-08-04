@@ -1,6 +1,6 @@
 [[source]]
 name = "testpypi"
-url = "https://testpypi.org/simple"
+url = "https://test.pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
