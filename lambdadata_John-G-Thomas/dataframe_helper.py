@@ -1,10 +1,10 @@
 """
 Function cleans dataframe
 """
-import pandas as pd
+from turtle import pd
 
 
-def clean(df):
+def cleaned(df):
     df = df.copy()
     # Drop NaN and extra columns and index
     df.dropna(subset=[df.select_dtypes(include=['datetime64'])], inplace=True)
@@ -17,7 +17,7 @@ clean datas and add pecific columns# def cleandate(df):
 """
 
 
-def date(df):
+def cleandate(df):
     df = df.copy()
     df['Year'] = (df.select_dtypes(include=['datetime64']).to_period('Y'))
     df['Month'] = (df.select_dtypes(include=['datetime64']).to_period('M'))

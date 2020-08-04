@@ -2,6 +2,9 @@ import pandas as pd
 
 
 class MyDataFrame(pd.DataFrame):
+    def _constructor_expanddim(self):
+        pass
+
     def num_cells(self):
         return self.shape[0] * self.shape[1]
 
