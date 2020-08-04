@@ -1,23 +1,26 @@
 """
 Function cleans dataframe
 """
-class cleaned
+import pandas as pd
+
 
 def clean(df):
     df = df.copy()
     # Drop NaN and extra columns and index
-    df.dropna(subset=["Datetime"], inplace=True)
-    df.set_index(pd.to_datetime(df['Datetime']), inplace=True)
-    df.drop('Datetime', axis=1, inplace=True)
+    df.dropna(subset=[df.select_dtypes(include=['datetime64'])], inplace=True)
+    df.set_index(pd.to_datetime(df.select_dtypes(include=['datetime64'])), inplace=True)
+    assert isinstance(df, object)
     return df
 
 
 """
 clean datas and add pecific columns# def cleandate(df):
 """
+
+
 def date(df):
-    df df.copy()
-    df['Year'] = pd.DatetimeIndex(df['Datetime']).year
-    df['Month'] = pd.DatetimeIndex(df['Datetime']).month
-    df['Day'] = pd.DatetimeIndex(df['Datetime']).day
+    df = df.copy()
+    df['Year'] = (df.select_dtypes(include=['datetime64']).to_period('Y'))
+    df['Month'] = (df.select_dtypes(include=['datetime64']).to_period('M'))
+    df['Day'] = (df.select_dtypes(include=['datetime64']).to_period('D'))
     return df
