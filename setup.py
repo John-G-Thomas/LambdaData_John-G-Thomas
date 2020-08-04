@@ -11,7 +11,7 @@ setuptools.setup(
     description="A small example package",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/John-G-Thomas/chaindata",
+    url="https://github.com/John-G-Thomas/LambdaData_johnt",
     packages=setuptools.find_packages(),
     python_requires='>=3',
     classifiers=[
