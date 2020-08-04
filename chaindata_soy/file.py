@@ -1,3 +1,13 @@
+from abc import ABC
+
+import pandas as pd
+
+
+class MyDataFrame(pd.DataFrame):
+    def num_cells(self):
+        return self.shape[0] * self.shape[1]
+
+
 class Complex:
     def __init__(self, realpart, imagpart):
         self.r = realpart
