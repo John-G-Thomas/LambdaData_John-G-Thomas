@@ -3,7 +3,7 @@ Function cleans dataframe
 """
 class cleaned
 
-def cleaned(df):
+def clean(df):
     df = df.copy()
     # Drop NaN and extra columns and index
     df.dropna(subset=["Datetime"], inplace=True)
