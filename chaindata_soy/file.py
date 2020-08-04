@@ -1,4 +1,3 @@
-
 class Complex:
     def __init__(self, realpart, imagpart):
         self.r = realpart
@@ -9,15 +8,16 @@ class Complex:
         self.i += other_complex.i
 
     def __repr__(self):
-        return '{}. {}'.format((self.r, self.i)),
-
-# class BasicClass:
-# def __init__
+        return '({}, {})'.format(self.r, self.i)
 
 
-# class AnothorClass:
-# def __init__
+class SocialMediaUser:
+    def __init__(self, name):
+        self.name = name
+        self.upvotes = 0
 
+    def receive_upvote(self):
+        self.upvotes += 1
 
-# myobject = BasicClass()
-# myobject
+    def is_popular(self):
+        return self.upvotes > 100
