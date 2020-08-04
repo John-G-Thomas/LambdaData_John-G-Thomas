@@ -1,7 +1,7 @@
 """
 Function cleans dataframe
 """
-from turtle import pd
+import pandas as pd
 
 
 def cleaned(df):
