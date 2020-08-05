@@ -2,6 +2,33 @@ import pandas as pd
 import math
 
 
+class mathx:
+    # Program published on https://beginnersbook.com
+
+    # Python program to perform Addition Subtraction Multiplication
+    # and Division of two numbers
+
+    num1 = int(input("Enter First Number: "))
+    num2 = int(input("Enter Second Number: "))
+
+    print("Enter which operation would you like to perform?")
+    ch = input("Enter any of these char for specific operation +,-,*,/: ")
+
+    result = 0
+    if ch == '+':
+        result = num1 + num2
+    elif ch == '-':
+        result = num1 - num2
+    elif ch == '*':
+        result = num1 * num2
+    elif ch == '/':
+        result = num1 / num2
+    else:
+        print("Input character is not recognized!")
+
+    print(num1, ch, num2, ":", result)
+
+
 class MyDataFrame(pd.DataFrame):
     def _constructor_expanddim(self):
         pass
