@@ -8,6 +8,8 @@
 ## Where to get it
 ### The source code is currently hosted on GitHub at: https://github.com/John-G-Thomas/LambdaData_John-G-Thomas
 
+### Or you can use the Dockerfile in the repo above ^^
+
 # on PyPI
 ### !pip install -i https://test.pypi.org/simple/ johnthomasg0215
 
