@@ -23,11 +23,13 @@ def divide(x, y):
 
 
 class calculator(float):
-    def __init__(self, num1=None, num2=None)
+    def __init__(self, num1=None, num2=None):
         super().__init__()
+        assert isinstance(num1, float)
+        self.num2 = num2
         assert isinstance(num2, float)
-        assert isinstance(num2, float)
-        self.num2=num2
+        self.num2 = num2
+
     print("Select operation.")
     print("1.Add")
     print("2.Subtract")
