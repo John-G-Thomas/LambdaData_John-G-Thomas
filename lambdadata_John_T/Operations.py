@@ -2,36 +2,32 @@
 and Division of two numbers"""
 
 
+# This function adds two numbers
 def add(x, y):
     return x + y
 
 
+# This function subtracts two numbers
 def subtract(x, y):
     return x - y
 
 
+# This function multiplies two numbers
 def multiply(x, y):
     return x * y
 
 
+# This function divides two numbers
 def divide(x, y):
     return x / y
 
 
 class calculator(float):
-    def __init__(self, x=None, y=None):
+    def __init__(self, num1=None, num2=None)
         super().__init__()
-        self.y = y
-        self.x = x
-
-    # This function adds two numbers
-
-    # This function subtracts two numbers
-
-    # This function multiplies two numbers
-
-    # This function divides two numbers
-
+        assert isinstance(num2, float)
+        assert isinstance(num2, float)
+        self.num2=num2
     print("Select operation.")
     print("1.Add")
     print("2.Subtract")
