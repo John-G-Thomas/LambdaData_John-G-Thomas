@@ -3,10 +3,10 @@ and Division of two numbers"""
 
 
 class calculator:
-    def __init__(self):
-        self.num1 = num1 = int(input("Enter First Number: "))
-        self.num2 = num2 = int(input("Enter Second Number: "))
-        self.ch = ch = input("Enter any of these char for specific operation +,-,*,/: ")
+    def __init__(self, num1, num2, ch):
+        self.num1 = int(input("Enter First Number: "))
+        self.num2 = int(input("Enter Second Number: "))
+        self.ch = input("Enter any of these char for specific operation +,-,*,/: ")
         if ch == '+':
             result = num1 + num2
             print(num1, ch, num2, ":", result)
