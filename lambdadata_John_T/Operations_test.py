@@ -1,6 +1,3 @@
-import unittest
-from random import randint
-
 """# unittest supports a type of tests called unit tests
 # A unit is the smallest cohesive piece of code we can test
 # (usually something like a function or method)
@@ -10,24 +7,53 @@ from random import randint
 # There are also manual/non-code tests that are common
 # - User acceptance testing: show it5 to a user, got feedback
 # - Manual running and checking"""
+import unittest
 
 
-class calculator(unittest.TestCase):
-    """Making sure our class behave as expected."""
+class calculator:
+    def __init__(self):
+        self.result = 0
 
-    def add(self):
-        """Testing that increment adds one to a number."""
-        x1 = 5
-        y1 = increment(x1)
-        x2 = -106
-        y2 = increment(x2)
-        # Now we make sure the output is as expected with assertions
-        self.assertEqual(y1, 6)
-        self.assertEqual(y2, -105)
-    def add(self):
+    #     # self.ch = str(input("Enter any of these char for specific operation +,-,*,/: "))
+    #     # self.num2 = int(input("Enter Second Number: "))
+    #     # self.num1 = int(input("Enter First Number: "))
+    def Operation(self, num1, ch, num2):
+        if ch == '+':
+            result = num1 + num2
+            self.result = result
+            # print(num1, ch, num2, ":", result)
+            return result
+        elif ch == '-':
+            result = num1 - num2
+            self.result = result
+            # print(num1, ch, num2, ":", result)
+            return result
+        elif ch == '*':
+            result = num1 * num2
+            self.result = result
+            # print(num1, ch, num2, ":", result)
+            return result
+        elif ch == '/':
+            result = num1 / num2
+            self.result = result
+            # print(num1, ch, num2, ":", result)
+            return result
+        else:
+            return print("Input character is not recognized!")
 
-    def test_increment_random(self):
-        """Test increment with randomly generated input."""
-        x1 = randint(1, 10000000)
-        y1 = increment(x1)
-        self.assertEqual(y1, x1 + 1)
+
+class CalculatorTest(unittest.TestCase):
+    def test_calc(self):
+        my_calculator = calculator()
+        self.assertEqual(4, my_calculator.Operation(1, '+', 3))
+
+    def test_calc_2(self):
+        my_calc_2 = calculator()
+        my_calc_2.Operation(1, "+", 3)
+        self.assertEqual(4, my_calc_2.result)
+        my_calc_2.Operation(4, "*", 5)
+        self.assertNotEqual(21, my_calc_2.result)
+
+
+if __name__ == '__main__':
+    unittest.main()
