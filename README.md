@@ -21,4 +21,4 @@
 ### - Twine
 
 ## License 
-### We use a open source MIT license letting anyone recreat or copy the repo
+### We use a open source MIT license letting anyone recreate or copy the repo
