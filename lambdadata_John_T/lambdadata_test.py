@@ -17,8 +17,8 @@ COLORS = ('Blue', 'Orange', 'Red', 'Green', 'Violet', 'Cyan')
 # unittest supports a type of tests called unit tests
 # A unit is the smallest cohesive piece of code we can test
 # (usually something like a function or method)
-# OTher types of tests (you won't write now, just to be aware):
-# - Intgratio: testing multiple pices working together
+# Other types of tests (you won't write now, just to be aware):
+# - Intgration: testing multiple pices working together
 # - End to end: testing a full "flow"/use case
 # There are also manual/non-code tests that are common
 # - User acceptance testing: show it5 to a user, got feedback

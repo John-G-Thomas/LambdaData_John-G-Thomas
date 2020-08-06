@@ -2,23 +2,49 @@
 and Division of two numbers"""
 
 
-class Operations:
-    num1 = int(input("Enter First Number: "))
-    num2 = int(input("Enter Second Number: "))
-
-    print("Enter which operation would you like to perform?")
-    ch = input("Enter any of these char for specific operation +,-,*,/: ")
-
-    result = 0
+def Operation(num1, num2, ch):
     if ch == '+':
         result = num1 + num2
+        return print(num1, ch, num2, ":", result)
     elif ch == '-':
         result = num1 - num2
+        return print(num1, ch, num2, ":", result)
     elif ch == '*':
         result = num1 * num2
+        return print(num1, ch, num2, ":", result)
     elif ch == '/':
         result = num1 / num2
+        return print(num1, ch, num2, ":", result)
     else:
-        print("Input character is not recognized!")
+        return print("Input character is not recognized!")
 
-    print(num1, ch, num2, ":", result)
+
+class math:
+    def __init__(self):
+        self.num1 = int(input("Enter First Number: "))
+        self.num2 = int(input("Enter Second Number: "))
+        self.ch = input("Enter any of these char for specific operation +,-,*,/: ")
+
+
+"""
+class Math:
+    def __init__(self):
+        self.num1 = int(input("Enter First Number: "))
+        self.num2 = int(input("Enter Second Number: "))
+        self.ch = input("Enter any of these char for specific operation +,-,*,/: ")
+
+    def Operation(self, num1, num2, ch):
+        if ch == '+':
+            result = num1 + num2
+            return print(num1, ch, num2, ":", result)
+        elif ch == '-':
+            result = num1 - num2
+            return print(num1, ch, num2, ":", result)
+        elif ch == '*':
+            result = num1 * num2
+            return print(num1, ch, num2, ":", result)
+        elif ch == '/':
+            result = num1 / num2
+            return print(num1, ch, num2, ":", result)
+        else:
+            return print("Input character is not recognized!") """
