@@ -41,7 +41,6 @@ class calculator:
         else:
             return print("Input character is not recognized!")
 
-
 class CalculatorTest(unittest.TestCase):
     def test_calc(self):
         my_calculator = calculator()
@@ -53,7 +52,6 @@ class CalculatorTest(unittest.TestCase):
         self.assertEqual(4, my_calc_2.result)
         my_calc_2.Operation(4, "*", 5)
         self.assertNotEqual(21, my_calc_2.result)
-
 
 if __name__ == '__main__':
     unittest.main()
