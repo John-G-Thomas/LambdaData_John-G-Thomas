@@ -1,4 +1,4 @@
-### johnthomasg0215: A simple package with useful classes and functions
+# johnthomasg0215: A simple package with useful classes and functions
 
 ## What is it? - Main Featurs
 #johnthomasg0215 - package allows the user to have access to some useful packages that clean dataframes and includes a simple useful calculator.
