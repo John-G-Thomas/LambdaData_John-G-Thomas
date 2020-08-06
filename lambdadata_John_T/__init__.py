@@ -6,7 +6,6 @@ import pandas as pd
 
 TEST = pd.DataFrame(np.ones(10))
 
-
 def increment(number):
     """Increases a given number by 1."""
     return number + 1
