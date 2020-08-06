@@ -17,7 +17,7 @@
 ### - NumPy
 ### - Pandas
 
-## Dev Depemdemcies
+## Dev Dependencies
 ### - Twine
 
 ## License 
